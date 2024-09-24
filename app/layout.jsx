@@ -3,8 +3,9 @@ import "./globals.css";
 
 // components
 import Header from "@/components/Header";
+import PageTransition from "@/components/PageTransition";
+import StairTransition from "@/components/StairTransition";
 
-// components
 
 /* const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,10 +33,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${jetbrainsMono.variable}`}
+        className={jetbrainsMono.variable}
       >
-        <Header />  
-        {children}
+        <Header />
+        <StairTransition />
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );
