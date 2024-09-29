@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import { Button } from "./ui/button";
 
@@ -21,7 +22,7 @@ const Header = () => {
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link href="/contact">
-            <Button>Download CV</Button>
+            <Button>Let's Connect!</Button>
           </Link>
         </div>
 
